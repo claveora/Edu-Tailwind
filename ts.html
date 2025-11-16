@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Education</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="icon" type="image/jpeg" href="assets/tcss.svg"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="overflow-x-hidden">
+        <!-- Navbar -->
+        <header class="fixed top-2 sm:top-4 left-1/2 transform -translate-x-1/2 z-50 w-[95%] sm:w-[90%] md:w-auto">
+            <nav class="backdrop-blur-md bg-white/40 border border-white/50 shadow-lg rounded-2xl sm:rounded-3xl px-3 sm:px-4 py-2.5 sm:py-3 flex items-center justify-between gap-4 sm:gap-8">
+                <div class="flex items-center gap-2">
+                    <a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/tcss.svg" alt="Tailwind Logo" class="h-6 sm:h-8">
+                    </a>
+                </div>
+
+                <ul class="hidden md:flex space-x-6 lg:space-x-8 text-base lg:text-lg font-semibold text-sky-400">
+                    <li><a href="#awal" class="hover:text-blue-900 transition">Beranda</a></li>
+                    <li><a href="#tentang" class="hover:text-blue-900 transition">Tentang</a></li>
+                    <li><a href="#sejarah" class="hover:text-blue-900 transition">Sejarah</a></li>
+                    <li><a href="#playground" class="hover:text-blue-900 transition">Playground</a></li>
+                    <li><a href="#kontak" class="hover:text-blue-900 transition">Kontak</a></li>
+                </ul>
+
+                <button class="md:hidden p-1.5 sm:p-2 rounded-lg hover:bg-white/50" id="menu-toggle">
+                    <svg xmlns="assets/tcss.svg" class="h-5 w-5 sm:h-6 sm:w-6 text-sky-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </nav>
+
+            <div id="mobile-menu" class="hidden mt-2 sm:mt-3 backdrop-blur-md bg-white/40 border border-white/50 rounded-xl sm:rounded-2xl shadow-md md:hidden">
+                <ul class="flex flex-col items-center space-y-2 sm:space-y-3 py-3 sm:py-4 text-sky-500 font-semibold text-sm sm:text-base">
+                    <li><a href="#awal" class="hover:text-blue-900 transition">Beranda</a></li>
+                    <li><a href="#tentang" class="hover:text-blue-900 transition">Tentang</a></li>
+                    <li><a href="#sejarah" class="hover:text-blue-900 transition">Sejarah</a></li>
+                    <li><a href="#playground" class="hover:text-blue-900 transition">Playground</a></li>
+                    <li><a href="#kontak" class="hover:text-blue-900 transition">Kontak</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <!-- Awalan -->
+        <section id="awal" class="pt-28 sm:pt-36 md:pt-40 lg:pt-48 pb-12 sm:pb-16 md:pb-20 px-4 sm:px-6">
+            <div class="flex flex-col md:flex-row items-center justify-between max-w-6xl mx-auto gap-8 md:gap-10">
+                <div class="w-full md:w-1/2 lg:w-3/5 order-2 md:order-1 text-center md:text-left">
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-sky-400 mb-4 sm:mb-6 leading-tight">
+                        Apa Itu Tailwind CSS ?
+                    </h1>
+                    <p class="text-base sm:text-lg text-gray-700 leading-relaxed mb-6 sm:mb-8">
+                        Ada apa dengan Tailwind CSS dimana kata orang-orang adalah sebuah framework CSS dengan gaya styling yang lebih cepat dan fleksibel daripada Vanilla CSS?
+                    </p>
+                    <button class="px-5 sm:px-6 py-2.5 sm:py-3 bg-sky-400 text-white text-sm sm:text-base font-semibold rounded-full shadow-lg hover:bg-sky-500 transition">
+                        <a href="#playground">Ayo Pelajari Agar Kamu Tahu!</a>
+                    </button>
+                </div>
+                <div class="w-full md:w-1/2 lg:w-2/5 order-1 md:order-2 flex justify-center">
+                    <div class="w-48 h-48 sm:w-64 sm:h-64 lg:w-80 lg:h-80 rounded-full  overflow-hidden shadow-2xl transition duration-500 hover:scale-105">
+                        <img src="assets/adam-teaching.webp" alt="Teaching" class="w-full h-full object-cover" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tentang -->
+        <section id="tentang" class="py-12 sm:py-16 md:py-20 px-4 sm:px-6">
+            <h2 class="text-3xl sm:text-4xl text-center font-semibold text-sky-400">
+                Tentang Tailwind CSS
+            </h2>
+            <p class="max-w-4xl text-base sm:text-lg mx-auto mt-4 sm:mt-6 text-center text-gray-700 px-4 sm:px-6 leading-relaxed">
+                Tailwind CSS adalah framework CSS berbasis utility-first, yang menyediakan class-class siap pakai untuk membangun antarmuka pengguna langsung dari HTML. Alih-alih menulis CSS kustom atau menggunakan komponen siap pakai seperti di Bootstrap, Tailwind memungkinkan kamu menyusun desain dengan menggabungkan utility class seperti `p-4`, `text-center`, `bg-blue-500`, dan sebagainya. Dengan begitu kamu dapat styling web kamu dengan lebih cepat daripada kamu menggunakan Vanilla CSS.
+            </p>
+        </section>
+
+        <!-- Sejarah -->
+        <section id="sejarah" class="py-12 sm:py-16 md:py-20 px-4 sm:px-6">
+            <h2 class="text-3xl sm:text-4xl text-center font-semibold text-sky-400">
+                Sejarah Tailwind CSS
+            </h2>
+            <p class="max-w-4xl text-base sm:text-lg mx-auto mt-4 sm:mt-6 text-center text-gray-700 px-4 sm:px-6 leading-relaxed">
+                Tailwind CSS dibuat oleh Adam Wathan dan timnya pada tahun 2017. Mereka menciptakan Tailwind untuk mengatasi tantangan dalam pengembangan web modern, seperti kesulitan dalam mengelola CSS yang kompleks dan kebutuhan untuk membuat desain yang konsisten. Sejak peluncurannya, Tailwind CSS telah menjadi salah satu framework CSS paling populer di dunia pengembangan web.
+            </p>
+        </section>
+
+        <!-- Kenapa Tailwind -->
+        <section class="py-8 sm:py-10 max-w-6xl mx-auto px-4 sm:px-6">
+            <h2 class="text-center text-sky-400 text-3xl sm:text-4xl font-semibold mb-8 sm:mb-10">Kenapa Harus Tailwind ?</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-10">
+                <div class="rounded-xl overflow-hidden shadow-[0_5px_15px_rgba(0,0,0,0.2)] transition-transform hover:scale-105 hover:shadow-lg hover:shadow-sky-500/70">
+                    <img src="assets/koding.jpg" alt="Koding Tailwind" class="w-full h-44 sm:h-52 object-cover pointer-events-none" />
+                    <div class="p-4 sm:p-6">
+                        <p class="text-sm sm:text-base lg:text-lg">
+                            Tailwind CSS mengusung pendekatan utility-first, menyediakan class-class kecil dan spesifik langsung di HTML. Kebebasan ini membuat proses styling lebih cepat dan fleksibel—itulah alasan Tailwind begitu populer dibandingkan Vanilla CSS.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mt-3 sm:mt-4">
+                            <button class="bg-sky-400/60 text-gray-600 px-2.5 sm:px-3 py-1 rounded-xl text-xs sm:text-sm">
+                                #TailwindPraktis
+                            </button>
+                            <button class="bg-sky-400/60 text-gray-600 px-2.5 sm:px-3 py-1 rounded-xl text-xs sm:text-sm">
+                                #BelajarTailwind
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rounded-xl overflow-hidden shadow-[0_5px_15px_rgba(0,0,0,0.2)] transition-transform hover:scale-105 hover:shadow-lg hover:shadow-sky-500/70">
+                    <img src="assets/tcss2.png" alt="Tailwind CSS 2" class="w-full h-44 sm:h-52 object-cover pointer-events-none" />
+                    <div class="p-4 sm:p-6">
+                        <p class="text-sm sm:text-base lg:text-lg">
+                            Fleksibel dan kalabel, kamu dapat membuat desain yang unik tanpa batasan yang sering ditemui pada framework komponen-based. Ukuran bundle CSS akhir juga lebih kecil. Styling dengan cepat gunakan Tailwind!
+                        </p>
+                        <button class="bg-sky-400/60 text-gray-600 mt-3 sm:mt-4 px-2.5 sm:px-3 py-1 rounded-xl text-xs sm:text-sm">
+                            #StylingLebihCepat
+                        </button>
+                    </div>
+                </div>
+
+                <div class="rounded-xl overflow-hidden shadow-[0_5px_15px_rgba(0,0,0,0.2)] transition-transform hover:scale-105 hover:shadow-lg hover:shadow-sky-500/70 sm:col-span-2 lg:col-span-1">
+                    <img src="assets/tcss3.jpeg" alt="Tailwind CSS 3" class="w-full h-44 sm:h-52 object-cover pointer-events-none" />
+                    <div class="p-4 sm:p-6">
+                        <p class="text-sm sm:text-base lg:text-lg">
+                            Jika kamu di Vanilla CSS perlu menulis banyak kode untuk styling responsive disegala tampilan, nah dengan Tailwind CSS kamu bisa styling responsive dengan cepat tanpa harus menulis kode panjang lebar.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mt-3 sm:mt-4">
+                            <button class="bg-sky-400/60 text-gray-600 px-2.5 sm:px-3 py-1 rounded-xl text-xs sm:text-sm">
+                                #ResponsiveCepat
+                            </button>
+                            <button class="bg-sky-400/60 text-gray-600 px-2.5 sm:px-3 py-1 rounded-xl text-xs sm:text-sm">
+                                #ByanEducation
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </section>
+
+
+        <!-- Komen -->
+        <section class="max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-12 rounded-2xl sm:rounded-3xl mb-8 sm:mb-12 bg-sky-100">
+            <h1 class="text-2xl sm:text-3xl lg:text-4xl text-sky-600 font-bold text-center mb-6 sm:mb-10 px-2">
+                Apa Kata Mereka Tentang Tailwind CSS?
+            </h1>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+                <div class="bg-white text-black rounded-xl p-4 sm:p-6 shadow-xl transform hover:scale-105 transition duration-300">
+                    <img src="assets/se.jpg" class="w-16 h-16 sm:w-20 sm:h-20 rounded-full mb-3 sm:mb-4 object-cover border-2 sm:border-4 border-white">
+                    <div class="text-lg sm:text-xl font-semibold mb-1">Claveora</div>
+                    <h6 class="text-xs sm:text-sm text-sky-900 mb-3 sm:mb-4 font-medium">Software Engineer</h6>
+                    <p class="italic text-sm sm:text-base leading-relaxed border-l-2 pl-2 sm:pl-3 border-cyan-400">
+                        "Tailwind ialah framework yang sangat bagus digunakan untuk styling web karena praktis dan simpel"
+                    </p>
+                </div>
+                
+                <div class="bg-white text-black rounded-xl p-4 sm:p-6 shadow-xl transform hover:scale-105 transition duration-300">
+                    <img src="assets/kamera.jpg" class="w-16 h-16 sm:w-20 sm:h-20 rounded-full mb-3 sm:mb-4 object-cover border-2 sm:border-4 border-white">
+                    <div class="text-lg sm:text-xl font-semibold mb-1">Byatara</div>
+                    <h6 class="text-xs sm:text-sm text-sky-900 mb-3 sm:mb-4 font-medium">Front-End Developer</h6>
+                    <p class="italic text-sm sm:text-base leading-relaxed border-l-2 pl-2 sm:pl-3 border-cyan-400">
+                        "Hey, kalian harus coba ini karena ini merupakan framework dengan kebebasan styling"
+                    </p>
+                </div>
+
+                <div class="bg-white text-black rounded-xl p-4 sm:p-6 shadow-xl transform hover:scale-105 transition duration-300">
+                    <img src="assets/roodiext.JPG" class="w-16 h-16 sm:w-20 sm:h-20 rounded-full mb-3 sm:mb-4 object-cover border-2 sm:border-4 border-white">
+                    <div class="text-lg sm:text-xl font-semibold mb-1">Rodi</div>
+                    <h6 class="text-xs sm:text-sm text-sky-900 mb-3 sm:mb-4 font-medium">Siswa SMKN 6 Surakarta</h6>
+                    <p class="italic text-sm sm:text-base leading-relaxed border-l-2 pl-2 sm:pl-3 border-cyan-400">
+                        "Gausah repot-repot kali nulis CSS panjang mending Tailwind aja"
+                    </p>
+                </div>
+
+                <div class="bg-white text-black rounded-xl p-4 sm:p-6 shadow-xl transform hover:scale-105 transition duration-300">
+                    <img src="assets/bodie.jpg" class="w-16 h-16 sm:w-20 sm:h-20 rounded-full mb-3 sm:mb-4 object-cover border-2 sm:border-4 border-white">
+                    <div class="text-lg sm:text-xl font-semibold mb-1">Boedie</div>
+                    <h6 class="text-xs sm:text-sm text-sky-900 mb-3 sm:mb-4 font-medium">Seorang Linux Abadi</h6>
+                    <p class="italic text-sm sm:text-base leading-relaxed border-l-2 pl-2 sm:pl-3 border-cyan-400">
+                        "Aku dipaksa Byan disuruh komentar disini"
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <!-- Tailwind Playground -->
+        <section id="playground" class="py-16 px-6">
+            <h2 class="text-4xl sm:text-4xl font-semibold text-center text-sky-400 mb-4">Tailwind Playground</h2>
+            <p class="text-xl text-center text-gray-600 mb-6">Ayo Coba Tailwind!</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+                <textarea id="codeInput" class="w-full h-64 p-4 border border-sky-300 rounded-xl text-sm font-mono bg-white text-gray-800 outline-none resize-none focus:ring-2 focus:ring-sky-400" spellcheck="false">
+<div class="p-6 bg-blue-500 text-white rounded-xl text-center font-semibold hover:bg-blue-800 transition delay-105">
+    Belajar Tailwind CSS
+</div>
+                </textarea>
+                <iframe id="preview" class="w-full h-64 bg-white border border-sky-300 rounded-xl shadow-inner"></iframe>
+            </div>
+        </section>
+
+        <!--FAQ Tailwind-->
+        <section class="max-w-3xl mx-auto px-4 py-8">
+            <h2 class="text-2xl sm:text-3xl lg:text-4xl text-sky-400 font-bold text-center mb-6 sm:mb-10 px-2">QnA</h2>
+            
+            <div class="space-y-4">
+                <!-- FAQ Item -->
+                <details class="bg-white border rounded-md shadow-sm px-8 py-4">
+                    <summary class="cursor-pointer font-semibold text-lg text-gray-800 hover:text-sky-400">
+                        Apa Itu Tailwind
+                    </summary>
+                    <p class="mt-2 text-base text-gray-600">
+                        Tailwind CSS adalah utility-first CSS framework, artinya kamu membangun tampilan web dengan menggabungkan class-class kecil seperti p-4, text-center, bg-blue-500, dan lainnya. Framework ini tidak menyediakan komponen siap pakai seperti Bootstrap (misalnya tombol atau navbar), tapi memberi kamu fleksibilitas penuh untuk mendesain dari nol.
+
+                    </p>
+                </details>
+
+                <details class="bg-white border rounded-md shadow-sm px-8 py-4">
+                    <summary class="cursor-pointer font-semibold text-lg text-gray-800 hover:text-sky-400">
+                        Apa Lebih Baik Daripada CSS Biasa?
+                    </summary>
+                    <p class="mt-2 text-base text-gray-600">
+                        Tailwind CSS bisa dianggap lebih baik daripada CSS biasa dalam hal kecepatan pengembangan, konsistensi desain, dan kemudahan pemeliharaan—terutama untuk proyek modern dan tim kolaboratif. Namun, “lebih baik” tergantung pada konteks dan kebutuhan proyekmu.
+                    </p>
+                </details>
+                
+                <details class="bg-white border rounded-md shadow-sm px-8 py-4">
+                    <summary class="cursor-pointer font-semibold text-lg text-gray-800 hover:text-sky-400">
+                        Apakah Tailwind CSS Cocok Untuk Pemula?
+                    </summary>
+                    <p class="mt-2 text-base text-gray-600">
+                        Ya, terutama jika kamu sudah memahami dasar-dasar HTML dan CSS. Tailwind membantu pemula belajar struktur desain dengan cepat karena semua styling dilakukan langsung di HTML.
+                    </p>
+                </details>
+
+                <details class="bg-white border rounded-md shadow-sm px-8 py-4">
+                    <summary class="cursor-pointer font-semibold text-lg text-gray-800 hover:text-sky-400">
+                        Bisakah Tailwind Digunakan untuk Dark Mode?
+                    </summary>
+                    <p class="mt-2 text-base text-gray-600">
+                        Bisa. Tailwind mendukung dark mode secara native dengan class seperti dark:bg-gray-900 atau dark:text-white. Kamu bisa mengaktifkan mode gelap dengan menambahkan class dark di elemen root.
+                    </p>
+                </details>
+
+                <details class="bg-white border rounded-md shadow-sm px-8 py-4">
+                    <summary class="cursor-pointer font-semibold text-lg text-gray-800 hover:text-sky-400">
+                        Bisakah Tailwind Dengan Boostrap Lebih Bagus Mana?
+                    </summary>
+                    <p class="mt-2 text-base text-gray-600">
+                        Bisa. Tailwind mendukung dark mode secara native dengan class seperti dark:bg-gray-900 atau dark:text-white. Kamu bisa mengaktifkan mode gelap dengan menambahkan class dark di elemen root.
+                    </p>
+                </details>
+            </div>
+        </section>
+
+        
+        <!-- Footer -->
+        <footer id="kontak" class="bg-gray-800 text-white px-4 sm:px-6 py-8 sm:py-10">
+            <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+                <div class="flex items-start justify-left sm:justify-left">
+                    <img src="assets/tcss.svg" class="h-24 w-24 sm:h-24 sm:w-24 rounded-full p-2" alt="Tailwind Logo Footer">
+                </div>
+
+                <div class="text-left sm:text-left">
+                    <h3 class="font-semibold mb-3 sm:mb-4 text-base sm:text-lg">Education</h3>
+                    <p class="text-xs sm:text-sm text-gray-400 mt-2">Beranda</p>
+                    <p class="text-xs sm:text-sm text-gray-400 mt-2">Tentang</p>
+                    <p class="text-xs sm:text-sm text-gray-400 mt-2">Sejarah</p>
+                    <p class="text-xs sm:text-sm text-gray-400 mt-2">Kontak</p>
+                </div>
+
+                <div class="text-left sm:text-left">
+                    <h3 class="font-semibold mb-3 sm:mb-4 text-base sm:text-lg">Kontak</h3>
+                    <p class="text-xs sm:text-sm text-gray-400 mt-2">Email: <a href="#" class="text-sky-400 hover:underline">tailwindedu@mail.com</a></p>
+                    <p class="text-xs sm:text-sm text-gray-400  mt-2">Telepon: <a href="#" class="text-sky-400 hover:underline">+62 123-456-789</a></p>
+                    <p class="text-xs sm:text-sm text-gray-400 mt-2">Jl. Slamet Riyadi<br>Surakarta, Indonesia</p>
+                </div>
+
+                <div class="text-left sm:text-left">
+                    <h3 class="font-semibold mb-3 sm:mb-4 text-base sm:text-lg">Sosial Media</h3>
+                    <ul class="space-y-2 text-xs sm:text-sm text-gray-400">
+                        <li>
+                            <a href="https://github.com/claveora" target="_blank" class="inline-flex items-center gap-2 text-sky-400 hover:underline">
+                                <i class="fa-brands fa-github text-lg"></i>Github
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/b__ytra?igsh=N2YxaDB1MTJic3Yz" target="_blank" class="inline-flex items-left gap-2 text-sky-400 hover:underline">
+                                <i class="fa-brands fa-instagram text-lg"></i>Instagram
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" class="inline-flex items-left gap-2 text-sky-400 hover:underline">
+                                <i class="fa-brands fa-facebook text-lg"></i>Facebook
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="max-w-6xl mx-auto mt-8 sm:mt-10 text-center px-4">
+                <p class=" text-xs sm:text-sm mb-2">
+                    Tailwind CSS Web Education
+                </p>
+                <p class="text-xs sm:text-sm text-gray-400">
+                    &copy;2025 Byatara. Dibuat menggunakan HTML,
+                    <a href="https://tailwindcss.com/" target="_blank" class="text-sky-400 hover:text-sky-300 transition underline">Tailwind CSS</a>,
+                    dan JavaScript.
+                </p>
+            </div>
+        </footer>
+    <script src="Script.js"></script>
+</body>
+</html>
