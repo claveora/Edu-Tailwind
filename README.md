@@ -46,24 +46,6 @@ Edu-Tailwind/
 
 ---
 
-## 🤝 Kontribusi
-1. Fork repo
-2. Buat branch baru:
-   ```
-   git checkout -b fitur-baru
-   ```
-3. Commit perubahan:
-   ```
-   git commit -m "Menambahkan fitur baru"
-   ```
-4. Push:
-   ```
-   git push origin fitur-baru
-   ```
-5. Ajukan Pull Request
-
----
-
 ## 📄 Lisensi
 Bebas dimodifikasi.
 
