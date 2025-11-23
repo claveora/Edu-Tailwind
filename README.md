@@ -23,10 +23,9 @@
 ```
 Edu-Tailwind/
 ├── src/
-│   ├── input.css
 │   ├── index.html
-│   ├── js/
-│   └── assets/
+│   ├── js
+│   └── assets
 ```
 
 ---
